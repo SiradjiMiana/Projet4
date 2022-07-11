@@ -1,0 +1,134 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: #1b143f;
+}
+
+header{
+    height: 100px;
+}
+
+section{
+    background-image:url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 100vh;
+}
+
+footer{
+    height: 250px;
+    background-color: #271d4c;
+    text-align: center;
+}
+
+/* Ecris en dessous */
+
+/* Affichage pour la tablette */
+@media only screen and (max-width:800px){
+    span.suitenom{
+        visibility: hidden;
+    }
+}
+/* Affichage pour le téléphone */
+@media only screen and (max-width:320px){
+    span.suiteprenom{
+        visibility: hidden;
+    }
+    span.suitenom{
+        visibility: hidden;
+    }
+    .alien2, .alien3, .alien4, .alien5, .alien6 {
+        visibility: hidden;
+    }
+}
+
+/* Intégration du logo */
+#logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    top:40px;
+    left:10px;
+}
+
+@media (max-width:800px) {
+    #logo{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width:320px) {
+    #logo{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Mise en page du titre */
+h1{
+    background-color: #271d4c;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px 2px red;
+    font: bold normal 2.5em normal;
+}
+
+/* Mise en page de la fusée */
+#fusee {
+    display: flex;
+    margin: auto;
+}
+#fusee:hover{
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+}
+
+/* Mise en page des alienes */
+#grid{
+    display: grid;
+    grid-row: 3;
+    justify-content: center;
+}
+.alien6{
+    grid-row: 1;
+    grid-column: 1;
+}
+.alien5{
+    grid-row: 1;
+    grid-column: 3;
+}
+.alien4{
+    grid-row: 1;
+    grid-column: 5;
+}
+.alien3{
+    grid-row: 2;
+    grid-column: 2;
+}
+.alien2{
+    grid-row: 2;
+    grid-column: 4;
+}
+.alien1{
+    grid-row: 3;
+    grid-column: 3;
+}
+
+/* Mise en page du paragraphe */
+p{
+    background-color: #271d4c;
+    width: 200px;
+    height: 100px;
+    color: white;
+    border: 3px solid white;
+    margin: auto;
+    text-align: center;
+}
+
+/* Le footer */
+#copy{
+    border: none;
+}
